@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  --accent: #00b894;
+  --background: #101114;
+  --border: #343843;
+  --button-muted: #2c3038;
+  --input: #171a20;
+  --muted: #9da6b6;
+  --shadow: 0 14px 34px rgba(0, 0, 0, 0.25);
+  --surface: #1e222b;
+  --surface-raised: #252a34;
+  --text: #f6f7fb;
+  background: var(--background);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 24px;
+  transition: background 200ms ease, color 200ms ease;
+}
+
+.app.light {
+  --accent: #0984e3;
+  --background: #eef2f7;
+  --border: #d5dce8;
+  --button-muted: #e3e9f2;
+  --input: #ffffff;
+  --muted: #667085;
+  --shadow: 0 14px 34px rgba(34, 47, 62, 0.12);
+  --surface: #ffffff;
+  --surface-raised: #ffffff;
+  --text: #17202a;
+}
+
+.todo-container {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 30px;
+  width: min(760px, 100%);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.app-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.eyebrow {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0;
+  margin: 0 0 6px;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0;
+}
+
+.theme-toggle {
+  background: var(--button-muted);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  cursor: pointer;
+  font-weight: 700;
+  padding: 10px 14px;
+}
+
+.filters {
+  display: flex;
+  gap: 8px;
+  margin: 20px 0 12px;
+}
+
+.filters button {
+  background: var(--button-muted);
+  border: 1px solid transparent;
+  border-radius: 8px;
+  color: var(--text);
+  cursor: pointer;
+  flex: 1;
+  font-weight: 700;
+  padding: 10px;
+}
+
+.filters button.active {
+  background: var(--accent);
+  color: white;
+}
+
+.task-stats {
+  color: var(--muted);
+  display: flex;
+  font-size: 13px;
+  gap: 14px;
+  justify-content: flex-end;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 640px) {
+  .app {
+    align-items: stretch;
+    padding: 12px;
+  }
+
+  .todo-container {
+    padding: 18px;
+  }
+
+  .app-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
