@@ -1,0 +1,35 @@
+.weather-card {
+  background: rgba(255, 255, 255, 0.2);
+  margin: 30px auto;
+  padding: 30px;
+  width: 300px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.weather-card h2 {
+  margin-bottom: 10px;
+}
+
+.weather-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin: 0 auto 10px;
+}
+
+.weather-card h3 {
+  font-size: 48px;
+  margin: 10px 0;
+}
+
+.weather-card .description {
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

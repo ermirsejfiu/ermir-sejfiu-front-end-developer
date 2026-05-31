@@ -1,0 +1,50 @@
+.app {
+  text-align: center;
+  padding: 50px;
+  color: white;
+  min-height: 100vh;
+}
+
+.app h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.search-box {
+  margin-top: 20px;
+}
+
+.search-box input {
+  padding: 12px;
+  width: 250px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+.search-box button {
+  padding: 12px 20px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #222;
+  color: white;
+  transition: 0.3s;
+}
+
+.search-box button:hover {
+  background: #444;
+}
+
+.message {
+  margin-top: 18px;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.message.error {
+  color: #ffd6d6;
+}
