@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cart | OfficeSpace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="brand" href="index.html">OfficeSpace</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a class="active" href="cart.html">Cart <span class="cart-count" data-cart-count>0</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="cart-page">
+    <section class="page-intro">
+      <p class="eyebrow">Your cart</p>
+      <h1>Review your workspace order.</h1>
+      <p>Adjust quantities, remove items, and check your estimated total before checkout.</p>
+    </section>
+
+    <section class="cart-layout">
+      <div class="cart-box" id="cartItems"></div>
+      <aside class="summary-box">
+        <h2>Order Summary</h2>
+        <div class="summary-line">
+          <span>Subtotal</span>
+          <strong id="cartSubtotal">EUR 0</strong>
+        </div>
+        <div class="summary-line">
+          <span>Delivery</span>
+          <strong>Free</strong>
+        </div>
+        <div class="summary-total">
+          <span>Total</span>
+          <strong id="cartTotal">EUR 0</strong>
+        </div>
+        <button class="btn primary checkout-btn" type="button" data-checkout>Proceed to Checkout</button>
+        <a class="btn secondary" href="product.html">Continue Shopping</a>
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 OfficeSpace. Built for better work.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

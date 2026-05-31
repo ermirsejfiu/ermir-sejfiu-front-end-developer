@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products | OfficeSpace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="brand" href="index.html">OfficeSpace</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="product.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html">Cart <span class="cart-count" data-cart-count>0</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="products-page">
+    <section class="page-intro">
+      <p class="eyebrow">Shop collection</p>
+      <h1>Office furniture that works as hard as you do.</h1>
+      <p>Search the collection, add products to your cart, and build a better workspace in minutes.</p>
+    </section>
+
+    <section class="shop-toolbar" aria-label="Product filters">
+      <label class="sr-only" for="searchInput">Search products</label>
+      <input type="search" id="searchInput" placeholder="Search chairs, desks, storage..." autocomplete="off">
+      <span id="resultCount">6 products</span>
+    </section>
+
+    <section class="product-grid" id="productGrid" aria-live="polite">
+      <article class="card" data-product-id="ergonomic-chair" data-name="Ergonomic Chair" data-price="199">
+        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=900&auto=format&fit=crop" alt="Black ergonomic office chair">
+        <div class="card-body">
+          <p class="tag">Best seller</p>
+          <h2>Ergonomic Chair</h2>
+          <p>Adjustable support for long, focused work sessions.</p>
+          <div class="price-row">
+            <strong>EUR 199</strong>
+            <button class="btn primary add-to-cart" type="button">Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-product-id="wood-desk" data-name="Wood Desk" data-price="349">
+        <img src="https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?q=80&w=900&auto=format&fit=crop" alt="Minimal wooden office desk">
+        <div class="card-body">
+          <p class="tag">Solid oak</p>
+          <h2>Wood Desk</h2>
+          <p>A warm, sturdy desk with room for deep work.</p>
+          <div class="price-row">
+            <strong>EUR 349</strong>
+            <button class="btn primary add-to-cart" type="button">Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-product-id="workspace-setup" data-name="Workspace Setup" data-price="599">
+        <img src="https://images.unsplash.com/photo-1497366412874-3415097a27e7?q=80&w=900&auto=format&fit=crop" alt="Complete modern workspace setup">
+        <div class="card-body">
+          <p class="tag">Bundle</p>
+          <h2>Workspace Setup</h2>
+          <p>Desk, chair, and accessories for a polished office.</p>
+          <div class="price-row">
+            <strong>EUR 599</strong>
+            <button class="btn primary add-to-cart" type="button">Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-product-id="standing-desk" data-name="Standing Desk" data-price="459">
+        <img src="https://images.unsplash.com/photo-1611269154421-4e27233ac5c7?q=80&w=900&auto=format&fit=crop" alt="Height adjustable standing desk">
+        <div class="card-body">
+          <p class="tag">Adjustable</p>
+          <h2>Standing Desk</h2>
+          <p>Sit, stand, and switch positions smoothly.</p>
+          <div class="price-row">
+            <strong>EUR 459</strong>
+            <button class="btn primary add-to-cart" type="button">Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-product-id="storage-cabinet" data-name="Storage Cabinet" data-price="249">
+        <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?q=80&w=900&auto=format&fit=crop" alt="Modern office storage cabinet">
+        <div class="card-body">
+          <p class="tag">Organized</p>
+          <h2>Storage Cabinet</h2>
+          <p>Clean storage for documents, devices, and supplies.</p>
+          <div class="price-row">
+            <strong>EUR 249</strong>
+            <button class="btn primary add-to-cart" type="button">Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-product-id="meeting-table" data-name="Meeting Table" data-price="699">
+        <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=900&auto=format&fit=crop" alt="Conference room with meeting table">
+        <div class="card-body">
+          <p class="tag">Team ready</p>
+          <h2>Meeting Table</h2>
+          <p>A refined table for planning, reviews, and client calls.</p>
+          <div class="price-row">
+            <strong>EUR 699</strong>
+            <button class="btn primary add-to-cart" type="button">Add to Cart</button>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <p class="empty-state" id="emptyState" hidden>No products found. Try a different search.</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 OfficeSpace. Built for better work.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
